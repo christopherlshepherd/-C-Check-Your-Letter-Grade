@@ -1,0 +1,38 @@
+/*
+Write a program that allows the user to enter the grade scored in a programming class.
+If the user scored a 100 then notify the user that they got a perfect score.
+
+★ Modify the program so that if the user scored a 90-100 it informs the user that they scored an A
+
+★★ Modify the program so that it will notify the user of their letter grade
+0-59 F 60-69 D 70-79 C 80-89 B 90-100 A
+*/
+
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+    double grade;
+    cout << "What was your grade?" << endl;
+    cin >> grade;
+    
+    if (grade == 100) cout << "You got a perfect score!" << endl;
+    else if (grade > 100 && grade <= 115) cout << "Perfect score plus some extra credit I assume. Good job!" << endl;
+    else if (grade > 115) cout << "That's a lot of extra credit you got..." << endl;
+    else if (grade <100 && grade >= 97.5) cout << "You got an A+" << endl;
+    else if (grade < 97.5 && grade >= 92.5) cout << "You got an A" << endl;
+    else if (grade < 92.5 && grade >= 90) cout << "You got an A-" << endl;
+    else if (grade < 90 && grade >= 87.5) cout << "You got an B+" << endl;
+    else if (grade < 87.5 && grade >= 82.5) cout << "You got a B" << endl;
+    else if (grade < 82.5 && grade >= 80) cout << "You got a B-" << endl;
+    else if (grade < 80 && grade >= 77.5) cout << "You got a C+" << endl;
+    else if (grade < 77.5 && grade >= 72.5) cout << "You got a C" << endl;
+    else if (grade < 72.5 && grade >= 70) cout << "You got a C-" << endl;
+    else if (grade < 70 && grade >= 67.5) cout << "You got a D+" << endl;
+    else if (grade < 67.5 && grade >= 62.5) cout << "You got a D" << endl;
+    else if (grade < 62.5 && grade >= 60) cout << "You got a D-" << endl;
+    else if (grade <60) cout << "Unfortunately, you got an F. Gotta study harder; you can do it!" << endl;
+    
+    return 0;
+}
